@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>MSG Automation – Keyword-Bibliothek</title>
+        <style>
+            body {
+                font:
+                    16px/1.5 system-ui,
+                    sans-serif;
+                max-width: 1000px;
+                margin: 40px auto;
+                padding: 0 22px;
+                color: #1e293b;
+                background: #f8fafc;
+            }
+            h1 {
+                margin-bottom: 4px;
+            }
+            h2 {
+                border-bottom: 2px solid #cbd5e1;
+                padding-bottom: 8px;
+                margin-top: 42px;
+            }
+            article {
+                background: white;
+                border: 1px solid #e2e8f0;
+                border-radius: 9px;
+                padding: 18px 22px;
+                margin: 14px 0;
+            }
+            h3 {
+                margin: 0;
+            }
+            p {
+                margin: 9px 0;
+            }
+            .source,
+            .meta,
+            small {
+                color: #64748b;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 12px;
+                font-size: 14px;
+            }
+            th,
+            td {
+                text-align: left;
+                vertical-align: top;
+                padding: 9px;
+                border-bottom: 1px solid #e2e8f0;
+            }
+            code {
+                font-family: ui-monospace, Consolas, monospace;
+                overflow-wrap: anywhere;
+            }
+            nav a {
+                margin-right: 18px;
+                color: #0755a5;
+            }
+            @media (max-width: 600px) {
+                body {
+                    padding: 0 12px;
+                }
+                article {
+                    padding: 12px;
+                }
+                table {
+                    font-size: 12px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Keyword-Bibliothek</h1>
+        <p>Fachliche Keywords des Playwright-Testframeworks · 36 Keywords in 3 Klassen</p>
+        <nav>
+            <a href="#AccountKeywords">AccountKeywords</a><a href="#ShoppingKeywords">ShoppingKeywords</a
+            ><a href="#UserKeywords">UserKeywords</a>
+        </nav>
+        <section id="AccountKeywords">
+            <h2>AccountKeywords</h2>
+            <p class="source">src/keywords/account.keywords.ts</p>
+            <article>
+                <h3><code>enterCredentials()</code></h3>
+                <p>Gibt Benutzername und Passwort in den Login-Dialog ein.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Typ</th>
+                            <th>Standard</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>username</code></td>
+                            <td><code>string</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für username.</td>
+                        </tr>
+                        <tr>
+                            <td><code>password</code></td>
+                            <td><code>string</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für password.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3><code>clickLogin()</code></h3>
+                <p>Sendet das Login-Formular ab.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>loginAsCustomer()</code></h3>
+                <p>Öffnet den Login-Dialog und meldet einen Kunden an.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Typ</th>
+                            <th>Standard</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>username</code></td>
+                            <td><code>string</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für username.</td>
+                        </tr>
+                        <tr>
+                            <td><code>password</code></td>
+                            <td><code>string</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für password.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3><code>logoutCustomer()</code></h3>
+                <p>Meldet den aktuell angemeldeten Kunden ab.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>openCustomerAccount()</code></h3>
+                <p>Öffnet die Kontoseite des angemeldeten Kunden.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>openCustomerOrders()</code></h3>
+                <p>Öffnet die Bestellübersicht des angemeldeten Kunden.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifyCustomerIsLoggedIn()</code></h3>
+                <p>Prüft, ob der erwartete Benutzername im Header angezeigt wird.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Typ</th>
+                            <th>Standard</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>username</code></td>
+                            <td><code>string</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für username.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3><code>verifyNoCustomerIsLoggedIn()</code></h3>
+                <p>Prüft, ob kein angemeldeter Benutzername angezeigt wird.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifyNoLoginErrorMessage()</code></h3>
+                <p>Prüft, ob keine Login-Fehlermeldung angezeigt wird.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifyShowLoginErrorMessage()</code></h3>
+                <p>Prüft, ob eine Login-Fehlermeldung angezeigt wird.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>registerNewCustomer()</code></h3>
+                <p>Öffnet die Registrierung, füllt die Kundendaten aus und akzeptiert die Bedingungen.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Typ</th>
+                            <th>Standard</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>data</code></td>
+                            <td><code>RegistrationData</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für data.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3><code>finishRegistration()</code></h3>
+                <p>Sendet die Registrierung ab.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifyRegistrationIsPossible()</code></h3>
+                <p>Prüft, ob das Registrierungsformular abgesendet werden kann.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifyRegistrationSuccess()</code></h3>
+                <p>Prüft, ob die Registrierungsseite nach erfolgreicher Registrierung geschlossen ist.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifySuccessfulLogin()</code></h3>
+                <p>Prüft, ob der Login-Dialog ohne Login-Fehlermeldung geschlossen wurde.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+        </section>
+        <section id="ShoppingKeywords">
+            <h2>ShoppingKeywords</h2>
+            <p class="source">src/keywords/shopping.keywords.ts</p>
+            <article>
+                <h3><code>addProductToCart()</code></h3>
+                <p>Wählt ein Produkt aus und fügt die angegebene Menge zum Warenkorb hinzu.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Typ</th>
+                            <th>Standard</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>productName</code></td>
+                            <td><code>string</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für productName.</td>
+                        </tr>
+                        <tr>
+                            <td><code>quantity</code></td>
+                            <td><code>number</code></td>
+                            <td>1</td>
+                            <td>Anzahl der Einheiten (Standard: 1).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3><code>addShoppingListToCart()</code></h3>
+                <p>Fügt alle Produkte der Einkaufsliste zum Warenkorb hinzu.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Typ</th>
+                            <th>Standard</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>shoppingList</code></td>
+                            <td><code>ShoppingListItem[]</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für shoppingList.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3><code>openShoppingCart()</code></h3>
+                <p>Öffnet den Warenkorb.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifyAllProductsComplete()</code></h3>
+                <p>Prüft, ob alle erwarteten Produkte mit ihren Mengen im Warenkorb stehen.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Typ</th>
+                            <th>Standard</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>shoppingList</code></td>
+                            <td><code>ShoppingListItem[]</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für shoppingList.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3><code>checkoutShoppingCart()</code></h3>
+                <p>Startet den Checkout aus dem Warenkorb.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>selectShipping()</code></h3>
+                <p>Bestätigt die Versanddetails und wechselt zur Zahlung.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>fillinPaymentData()</code></h3>
+                <p>Füllt die Zahlungsdaten entsprechend der gewählten Zahlungsmethode aus.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Typ</th>
+                            <th>Standard</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>payment</code></td>
+                            <td><code>PaymentData</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für payment.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3><code>finishPurchase()</code></h3>
+                <p>Sendet die Zahlung ab.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifyPurchaseSuccessfull()</code></h3>
+                <p>Prüft, ob die Kaufbestätigung angezeigt wird.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifyProductCount()</code></h3>
+                <p>Prüft die Gesamtstückzahl aller Produkte im Warenkorb.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Typ</th>
+                            <th>Standard</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>shoppingList</code></td>
+                            <td><code>ShoppingListItem[]</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für shoppingList.</td>
+                        </tr>
+                        <tr>
+                            <td><code>expectedCount</code></td>
+                            <td><code>number</code></td>
+                            <td>–</td>
+                            <td>Eingabewert für expectedCount.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3><code>verifyPaymentIsPossible()</code></h3>
+                <p>Prüft, ob der aktive Zahlungsbutton aktiviert ist.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+        </section>
+        <section id="UserKeywords">
+            <h2>UserKeywords</h2>
+            <p class="source">src/keywords/user.keywords.ts</p>
+            <article>
+                <h3><code>openUserMenu()</code></h3>
+                <p>Öffnet das Benutzermenü.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>openShoppingPage()</code></h3>
+                <p>Öffnet die Startseite des Shops.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>returnToHomePage()</code></h3>
+                <p>Navigiert über den Header zur Startseite.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>verifySiteTitle()</code></h3>
+                <p>Prüft den Seitentitel.</p>
+                <div class="meta">Rückgabewert: <code>Promise&lt;void&gt;</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>getShoppingList()</code></h3>
+                <p>Liefert die Einkaufsliste aus den Testdaten.</p>
+                <div class="meta">Rückgabewert: <code>ShoppingListItem[]</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>getUsername()</code></h3>
+                <p>Liefert den Benutzernamen aus den Testdaten.</p>
+                <div class="meta">Rückgabewert: <code>string</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>getPassword()</code></h3>
+                <p>Liefert das Passwort aus den Testdaten.</p>
+                <div class="meta">Rückgabewert: <code>string</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>generateRandomizedUser()</code></h3>
+                <p>Erzeugt einen zufälligen Benutzernamen aus dem Präfix und speichert ihn in den Testdaten.</p>
+                <div class="meta">Rückgabewert: <code>string</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>getRegistrationData()</code></h3>
+                <p>Liefert die Registrierungsdaten des Kunden.</p>
+                <div class="meta">Rückgabewert: <code>RegistrationData</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+            <article>
+                <h3><code>getPaymentData()</code></h3>
+                <p>Liefert die Zahlungsdaten des Kunden.</p>
+                <div class="meta">Rückgabewert: <code>PaymentData</code></div>
+                <div class="meta">Keine Parameter</div>
+            </article>
+        </section>
+    </body>
+</html>

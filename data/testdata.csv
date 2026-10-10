@@ -1,0 +1,3 @@
+testCase,usernamePrefix,emailDomain,password,product1,product2,product3,paymentMethod,safepayUsername,safepayPassword,cardNumber,cvv,expiryMonth,expiryYear,cardholderName
+newCustomer,Litty,litty@mail.com,Tornado5,BOSE SOUNDLINK BLUETOOTH SPEAKER III,,,CreditCard,,,797979789789,565,04,2033,Smeep
+existingCustomer,JeyTolkien,jeytolkien@web.de,Orc5,BOSE SOUNDLINK BLUETOOTH SPEAKER III,BOSE SOUNDLINK BLUETOOTH SPEAKER III,HP ENVY X360 - 15T LAPTOP,Safepay,JeyTo,Tornado5,,,,,
