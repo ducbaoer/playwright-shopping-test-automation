@@ -1,4 +1,4 @@
-# MSG Test Automation – Advantage Online Shopping
+# Test Automation – Advantage Online Shopping
 
 Automatisierte End-to-End-Tests für die Demo-Webseite [Advantage Online Shopping](http://www.advantageonlineshopping.com/) mit **Playwright und TypeScript**.
 
